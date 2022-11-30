@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// styling
+import * as STYLE from "styles/general";
+import TopNavigation from "components/top-navigation";
+import SideNavigation from "components/side-navigation";
+import Dashboard from "container/dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TopNavigation />
+      <STYLE.AppContainer>
+        <SideNavigation />
+        <Dashboard />
+      </STYLE.AppContainer>
+    </>
   );
-}
+};
 
 export default App;
