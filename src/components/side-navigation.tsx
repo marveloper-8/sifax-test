@@ -4,7 +4,6 @@ import { BsChatLeftTextFill, BsFillFileEarmarkTextFill } from 'react-icons/bs';
 import { AiOutlineBarChart, AiOutlineUnorderedList } from 'react-icons/ai';
 import * as STYLE from 'styles/side-navigation'
 import { useState } from 'react';
-import logo from 'resources/logo.png'
 
 const icons = (value: any) => {
   if(value === 'dashboard') return <HiSquares2X2 />

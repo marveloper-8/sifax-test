@@ -1,7 +1,5 @@
-import { BsSearch } from 'react-icons/bs';
 import * as STYLE from 'styles/dashboard'
-import profile from 'resources/profile.jpeg'
-import { AiOutlineDown, AiOutlineLink, AiOutlinePlus, AiOutlineUnorderedList } from 'react-icons/ai';
+import { AiOutlineLink, AiOutlinePlus, AiOutlineUnorderedList } from 'react-icons/ai';
 import { dashboard } from 'data/dashboard';
 import { HiOutlineChatBubbleLeft } from 'react-icons/hi2';
 import { IoEllipsisHorizontalOutline } from 'react-icons/io5';

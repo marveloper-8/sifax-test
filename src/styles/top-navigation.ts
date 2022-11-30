@@ -33,6 +33,20 @@ export const Logo = styled.img`
 export const Right = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   color: #b6b6b6;
+`;
+
+export const Notification = styled.div`
+  position: relative;
+`;
+
+export const NotificationBadge = styled.span`
+  background: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 30;
+  right: 0;
 `;

@@ -1,9 +1,6 @@
-import { navigation } from 'data/navigation';
-import { HiSquares2X2 } from 'react-icons/hi2';
-import { BsBellFill, BsChatLeftTextFill, BsFillFileEarmarkTextFill } from 'react-icons/bs';
-import { AiOutlineBarChart, AiOutlinePlus, AiOutlineUnorderedList } from 'react-icons/ai';
+import { BsBellFill} from 'react-icons/bs';
+import { AiOutlinePlus } from 'react-icons/ai';
 import * as STYLE from 'styles/top-navigation'
-import { useState } from 'react';
 import logo from 'resources/logo.png'
 import SearchInput from 'widgets/search';
 import { Button } from 'styles/widgets';
@@ -11,7 +8,6 @@ import ProfileWidget from 'widgets/profile';
 
 
 function TopNavigation() {
-  const [active, setActive] = useState('dashboard');
   return (
     <STYLE.Container>
       <STYLE.Logo src={logo} alt="Tuscot" />
@@ -21,7 +17,10 @@ function TopNavigation() {
           <AiOutlinePlus />
           New Project
         </Button>
-        <BsBellFill />
+        <STYLE.Notification>
+          <BsBellFill />
+          <STYLE.NotificationBadge />
+        </STYLE.Notification>
         <ProfileWidget />
       </STYLE.Right>
     </STYLE.Container>
